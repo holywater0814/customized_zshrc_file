@@ -12,7 +12,6 @@
  cd ~/Desktop
  # Useful support for interacting with Terminal.app or other terminal programs
  [ -r "/etc/zshrc_$TERM_PROGRAM" ] && . "/etc/zshrc_$TERM_PROGRAM"
-export JAVA_HOME=/Library/Java/JavaVirtualMachines/temurin-23.jdk/Contents/Home
 
 alias python='/opt/homebrew/bin/python3'
 alias python3='/opt/homebrew/bin/python3'
@@ -29,8 +28,8 @@ openapp() {
         brave) open -a "Brave Browser";;
         mail) open -a "Mail" ;;
         *) 
-            # Attempt to open other applications by name
-            open -a "$(echo "$1" | tr '[:upper:]' '[:lower:]')"  # Try to open using the original name
+           
+            open -a "$(echo "$1" | tr '[:upper:]' '[:lower:]')"  # To open using the original name
             ;;
     esac
 }
