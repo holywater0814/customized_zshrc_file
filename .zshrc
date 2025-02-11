@@ -34,3 +34,12 @@ openapp() {
     esac
 }
 
+#For gnu-sed
+sed() {
+    gsed "$@"
+}
+
+# For cheat.sh
+cheat() {
+    curl cheat.sh/$1
+}
